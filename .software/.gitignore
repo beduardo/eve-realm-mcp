@@ -1,0 +1,4 @@
+vectors.db
+vectors.db-journal
+vectors.db-wal
+vectors.db-shm
