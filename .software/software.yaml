@@ -28,7 +28,9 @@ counters:
     ADR: 0
     BF: 0
     CR: 1
-    REQ: 0
+    REQ: 5
     SC: 0
     TC: 0
     US: 0
+pinned:
+    - REQ-005
