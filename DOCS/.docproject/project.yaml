@@ -1,0 +1,14 @@
+title: eve-realm-mcp — Technical Documentation
+type: technical
+objective: Document the architecture, design, and implementation of the unified MCP Server that aggregates plugin tools/skills via NATS discovery, proxies tool calls to plugins via gRPC, and coordinates background agent execution for the eve-realm platform.
+author: beduardo
+organization: eve-realm
+status: drafting
+language: en
+created: "2026-06-20"
+vectorDB:
+    path: .docproject/vectors.db
+    chunkSize: 500
+    chunkOverlap: 50
+    embeddingModel: text-embedding-3-small
+    synthesisModel: gpt-5.4-mini
