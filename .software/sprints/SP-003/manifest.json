@@ -1,0 +1,52 @@
+{
+  "id": "SP-003",
+  "title": "K8s deployment manifests and local deploy pipeline",
+  "status": "completed",
+  "created": "2026-06-22T18:48:00Z",
+  "updated": "2026-06-22T19:56:39Z",
+  "entities": [
+    {
+      "id": "REQ-008",
+      "title": "K8s deployment manifests and local deploy pipeline",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "SC-00A",
+      "title": "Deployment manifest defines correct pod spec with health probes",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-00B",
+      "title": "Service manifest exposes HTTP and gRPC ports",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-00C",
+      "title": "Deploy-local replaces version placeholder and applies manifests",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-00D",
+      "title": "Wait-rollout confirms deployment stability",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-00E",
+      "title": "Release pipeline orchestrates full build-deploy cycle",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    }
+  ],
+  "readme_update_needed": false
+}

@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eve-realm
+  labels:
+    app.kubernetes.io/part-of: eve-realm
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eve-realm-config
+  namespace: eve-realm
+  labels:
+    app.kubernetes.io/part-of: eve-realm
+data:
+  EVE_REALM_LOG_LEVEL: "debug"
+  EVE_REALM_AUTH_DOMAIN: "dev-twmpbn8pib668naq.us.auth0.com"
+  EVE_REALM_AUTH_AUDIENCE: "https://api.eve-realm.dev"
+  EVE_REALM_AUTH_CLIENT_ID_CLI: "Z1WxIkqdujlNd7LbgN808SFK9You2fN7"
+  EVE_REALM_AUTH_CLIENT_ID_WEB: "bAQpA616A9dXfq5JzV6OXeSeILcNjvvi"
+  EVE_REALM_DSN: "postgres://eve-realm:eve-realm@host.docker.internal:5432/eve-realm?sslmode=disable"
+  EVE_REALM_CONTROL_DSN: "postgres://eve-realm:eve-realm@host.docker.internal:5432/eve-realm_control_plane?sslmode=disable"
+  EVE_REALM_NEO4J_URI: "bolt://neo4j:eve-realm@host.docker.internal:7687/eve-realm"
+  EVE_REALM_NATS_URL: "nats://eve-realm-nats.eve-realm.svc.cluster.local:4222"
+  EVE_REALM_NATS_WS_URL: "ws://eve-realm-nats.eve-realm.svc.cluster.local:9222"
+  EVE_REALM_NATS_BROWSER_TOKEN: "eve-realm-browser"
+  EVE_REALM_NATS_PASSWORD: "eve-realm-nats"
+  EVE_REALM_REDIS_URL: "redis://eve-realm-redis.eve-realm.svc.cluster.local:6379"
+  EVE_REALM_SERVER_URL: ""

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: eve-realm-mcp
+  namespace: eve-realm
+  labels:
+    app: eve-realm-mcp
+    app.kubernetes.io/part-of: eve-realm
+spec:
+  type: ClusterIP
+  selector:
+    app: eve-realm-mcp
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+    - name: grpc
+      port: 50051
+      targetPort: 50051
+      protocol: TCP

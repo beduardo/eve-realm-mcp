@@ -9,14 +9,14 @@ related_scenarios: []
 related_testcases: []
 related_userstories: []
 source: manual
-status: draft
+status: blocked
 tags:
     - documentation
     - kubernetes
     - k3d
     - operations
 title: Local k3d cluster topology reference for operational agents
-updated: "2026-06-20"
+updated: "2026-06-22"
 ---
 
 # REQ-004: Local k3d cluster topology reference for operational agents

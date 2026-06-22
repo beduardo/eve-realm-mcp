@@ -1,4 +1,4 @@
-title: eve-realm-mcp
+title: EVE Realm MCP
 description: Unified MCP Server for the eve-realm platform. Aggregates tools and skills from all plugins into a single MCP endpoint for AI tools (Claude Code, IDE extensions). Discovers plugins via NATS, proxies tool/skill calls via gRPC using the SDK protobuf contract, and coordinates background agent execution with progress streaming.
 language: Go
 created: "2026-06-20"
@@ -6,6 +6,8 @@ author: beduardo
 activeChange: CR-001
 autoCommit: true
 llmSummary: true
+sprints:
+    counter: 3
 scan:
     includePaths:
         - .
@@ -28,8 +30,8 @@ counters:
     ADR: 0
     BF: 0
     CR: 1
-    REQ: 5
-    SC: 0
+    REQ: 9
+    SC: 18
     TC: 0
     US: 0
 pinned:

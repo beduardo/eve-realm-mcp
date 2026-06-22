@@ -9,14 +9,14 @@ related_scenarios: []
 related_testcases: []
 related_userstories: []
 source: manual
-status: draft
+status: blocked
 tags:
     - tdd
     - testing
     - cross-cutting
 testing_strategy: tdd
 title: Test-Driven Development Strategy
-updated: "2026-06-20"
+updated: "2026-06-22"
 ---
 
 # REQ-001: Test-Driven Development Strategy

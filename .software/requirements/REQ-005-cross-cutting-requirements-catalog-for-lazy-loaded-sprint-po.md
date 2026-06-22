@@ -9,13 +9,13 @@ related_scenarios: []
 related_testcases: []
 related_userstories: []
 source: manual
-status: draft
+status: blocked
 tags:
     - pinned
     - cross-cutting
     - catalog
 title: Cross-cutting requirements catalog for lazy-loaded sprint policy injection
-updated: "2026-06-20"
+updated: "2026-06-22"
 ---
 
 # REQ-005: Cross-cutting requirements catalog for lazy-loaded sprint policy injection

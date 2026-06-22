@@ -1,0 +1,59 @@
+{
+  "id": "SP-001",
+  "title": "Build pipeline with semantic versioning",
+  "status": "completed",
+  "created": "2026-06-22T16:18:24Z",
+  "updated": "2026-06-22T17:04:44Z",
+  "entities": [
+    {
+      "id": "REQ-006",
+      "title": "Build pipeline with semantic versioning",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "SC-001",
+      "title": "Development build compiles without version injection",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-002",
+      "title": "Production build injects version metadata via ldflags",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-003",
+      "title": "Patch version bump increments correctly",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-004",
+      "title": "Minor version bump resets patch segment",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-005",
+      "title": "Major version bump resets minor and patch segments",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-006",
+      "title": "Test failure exits non-zero",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    }
+  ],
+  "readme_update_needed": false
+}

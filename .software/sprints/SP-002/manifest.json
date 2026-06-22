@@ -1,0 +1,73 @@
+{
+  "id": "SP-002",
+  "title": "Docker image build and minimal MCP Server binary",
+  "status": "completed",
+  "created": "2026-06-22T17:23:51Z",
+  "updated": "2026-06-22T18:28:22Z",
+  "entities": [
+    {
+      "id": "REQ-007",
+      "title": "Docker image build and local registry push",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "REQ-009",
+      "title": "Minimal MCP Server binary with health probes",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "SC-007",
+      "title": "Dockerfile multi-stage build produces runnable distroless image",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-008",
+      "title": "Docker build tags image with semantic version",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-009",
+      "title": "Docker push delivers image to k3d registry",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-00F",
+      "title": "Binary compiles and starts with default port",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-010",
+      "title": "Health probe endpoints return 200",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-011",
+      "title": "Version endpoint reports ldflags-injected metadata",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-012",
+      "title": "Graceful shutdown on SIGINT and SIGTERM",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    }
+  ],
+  "readme_update_needed": false
+}

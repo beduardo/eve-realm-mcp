@@ -1,0 +1,27 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: eve-realm
+servers: 1
+agents: 0
+kubeAPI:
+  host: "0.0.0.0"
+  hostIP: "0.0.0.0"
+  hostPort: "6550"
+image: rancher/k3s:v1.32.4-k3s1
+ports:
+  - port: 30000:30000
+    nodeFilters:
+      - loadbalancer
+registries:
+  use:
+    - k3d-eve-realm-registry.localhost:5100
+options:
+  k3d:
+    wait: true
+    disableLoadbalancer: false
+  k3s:
+    extraArgs:
+      - arg: --disable=traefik
+        nodeFilters:
+          - server:*

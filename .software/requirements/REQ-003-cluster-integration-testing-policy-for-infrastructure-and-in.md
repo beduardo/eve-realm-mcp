@@ -9,14 +9,14 @@ related_scenarios: []
 related_testcases: []
 related_userstories: []
 source: manual
-status: draft
+status: blocked
 tags:
     - testing
     - kubernetes
     - cross-cutting
     - infrastructure
 title: Cluster integration testing policy for infrastructure and inter-pod changes
-updated: "2026-06-20"
+updated: "2026-06-22"
 ---
 
 # REQ-003: Cluster integration testing policy for infrastructure and inter-pod changes

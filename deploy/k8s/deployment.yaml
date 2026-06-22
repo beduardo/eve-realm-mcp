@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eve-realm-mcp
+  namespace: eve-realm
+  labels:
+    app: eve-realm-mcp
+    app.kubernetes.io/part-of: eve-realm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eve-realm-mcp
+  template:
+    metadata:
+      labels:
+        app: eve-realm-mcp
+        app.kubernetes.io/part-of: eve-realm
+    spec:
+      containers:
+        - name: eve-realm-mcp
+          image: k3d-eve-realm-registry.localhost:5100/eve-realm-mcp:VERSION_PLACEHOLDER
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+            - name: grpc
+              containerPort: 50051
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: eve-realm-config
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8080
+            initialDelaySeconds: 3
+            periodSeconds: 5
+            failureThreshold: 3
+          resources:
+            requests:
+              memory: 128Mi
+              cpu: 100m
+            limits:
+              memory: 256Mi
+              cpu: 250m

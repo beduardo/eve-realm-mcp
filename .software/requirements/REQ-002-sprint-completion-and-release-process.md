@@ -9,13 +9,13 @@ related_scenarios: []
 related_testcases: []
 related_userstories: []
 source: manual
-status: draft
+status: blocked
 tags:
     - process
     - release
     - cross-cutting
 title: Sprint completion and release process
-updated: "2026-06-20"
+updated: "2026-06-22"
 ---
 
 # REQ-002: Sprint completion and release process
