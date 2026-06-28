@@ -1,0 +1,73 @@
+{
+  "id": "SP-004",
+  "title": "gRPC tool registry service with ping diagnostic tool",
+  "status": "completed",
+  "created": "2026-06-28T09:54:25Z",
+  "updated": "2026-06-28T18:29:01Z",
+  "entities": [
+    {
+      "id": "REQ-00A",
+      "title": "gRPC tool registry service",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "REQ-00B",
+      "title": "Ping built-in diagnostic tool",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "SC-013",
+      "title": "gRPC server starts alongside HTTP server",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-014",
+      "title": "ListTools returns registered built-in tools",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-015",
+      "title": "InvokeTool dispatches to handler and returns result",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-016",
+      "title": "InvokeTool with unknown tool returns NOT_FOUND",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-017",
+      "title": "Tool registry supports concurrent access",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-018",
+      "title": "Ping tool registered at startup",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-019",
+      "title": "Ping invocation returns pong with RFC 3339 timestamp",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    }
+  ],
+  "readme_update_needed": false
+}

@@ -7,7 +7,7 @@ MAIN_PKG     := ./cmd/eve-realm-mcp
 VERSION_FILE := VERSION
 DOCKER_IMAGE := k3d-eve-realm-registry.localhost:5100/eve-realm-mcp
 
-.PHONY: build build-prod test test-all bump-patch bump-minor bump-major release-patch release-minor release-major docker-build docker-push deploy-local wait-rollout cluster-up cluster-down
+.PHONY: build build-prod test test-all proto bump-patch bump-minor bump-major release-patch release-minor release-major docker-build docker-push deploy-local wait-rollout cluster-up cluster-down
 
 build:
 	mkdir -p dist
@@ -19,6 +19,13 @@ build-prod:
 
 test:
 	go test -count=1 ./...
+
+proto:
+	mkdir -p gen/proto/mcp/v1
+	protoc --proto_path=proto \
+		--go_out=gen --go_opt=module=github.com/beduardo/eve-realm-mcp/gen \
+		--go-grpc_out=gen --go-grpc_opt=module=github.com/beduardo/eve-realm-mcp/gen \
+		mcp/v1/mcp.proto
 
 bump-patch:
 	@NEW_VERSION=$$(awk -F. '{printf "%d.%d.%d", $$1, $$2, $$3+1}' $(VERSION_FILE)); \

@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package mcp.v1;
+
+option go_package = "github.com/beduardo/eve-realm-mcp/gen/proto/mcp/v1;mcpv1";
+
+// MCPService exposes the MCP tool registry over gRPC.
+service MCPService {
+  // ListTools returns all tools registered with the MCP Server.
+  rpc ListTools(ListToolsRequest) returns (ListToolsResponse);
+
+  // InvokeTool dispatches a tool call and returns the result.
+  rpc InvokeTool(InvokeToolRequest) returns (InvokeToolResponse);
+}
+
+// ListToolsRequest is intentionally empty; no filtering criteria are needed.
+message ListToolsRequest {}
+
+// ToolDescriptor describes a single tool available through the MCP Server.
+message ToolDescriptor {
+  // name is the unique identifier for the tool (e.g., "ping").
+  string name = 1;
+
+  // description is a human-readable summary of what the tool does.
+  string description = 2;
+
+  // input_schema is a JSON-encoded JSON Schema object describing the tool's
+  // expected input fields.
+  string input_schema = 3;
+}
+
+// ListToolsResponse carries the full set of registered tool descriptors.
+message ListToolsResponse {
+  repeated ToolDescriptor tools = 1;
+}
+
+// InvokeToolRequest carries the name of the tool to invoke and its input.
+message InvokeToolRequest {
+  // tool_name identifies the target tool (must match a ToolDescriptor.name).
+  string tool_name = 1;
+
+  // input is a JSON-encoded object whose shape conforms to the tool's
+  // input_schema.
+  string input = 2;
+}
+
+// InvokeToolResponse carries the result of a tool invocation.
+message InvokeToolResponse {
+  // output is a JSON-encoded object containing the tool's result payload.
+  string output = 1;
+}

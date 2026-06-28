@@ -7,7 +7,7 @@ metadata:
     app: eve-realm-mcp
     app.kubernetes.io/part-of: eve-realm
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: eve-realm-mcp
   ports:
@@ -18,4 +18,5 @@ spec:
     - name: grpc
       port: 50051
       targetPort: 50051
+      nodePort: 30051
       protocol: TCP
