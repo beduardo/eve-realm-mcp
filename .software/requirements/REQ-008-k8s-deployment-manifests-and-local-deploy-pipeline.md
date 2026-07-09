@@ -14,13 +14,13 @@ related_scenarios:
 related_testcases: []
 related_userstories: []
 source: manual
-status: active
+status: implemented
 tags:
     - kubernetes
     - deploy
     - k3d
 title: K8s deployment manifests and local deploy pipeline
-updated: "2026-06-22"
+updated: "2026-06-29"
 ---
 
 # REQ-008: K8s deployment manifests and local deploy pipeline

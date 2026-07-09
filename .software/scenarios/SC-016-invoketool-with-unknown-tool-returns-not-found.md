@@ -7,14 +7,14 @@ related_reqs:
     - REQ-00A
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - grpc
     - invoke-tool
     - error
 title: InvokeTool with unknown tool returns NOT_FOUND
 type: error-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-016: InvokeTool with unknown tool returns NOT_FOUND

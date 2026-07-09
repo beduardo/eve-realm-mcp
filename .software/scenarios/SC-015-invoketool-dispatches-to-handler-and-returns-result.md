@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00A
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - grpc
     - invoke-tool
 title: InvokeTool dispatches to handler and returns result
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-015: InvokeTool dispatches to handler and returns result

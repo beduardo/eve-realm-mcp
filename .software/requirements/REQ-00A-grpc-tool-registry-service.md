@@ -14,13 +14,13 @@ related_scenarios:
 related_testcases: []
 related_userstories: []
 source: manual
-status: active
+status: implemented
 tags:
     - grpc
     - tool-registry
     - mcp-server
 title: gRPC tool registry service
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # REQ-00A: gRPC tool registry service

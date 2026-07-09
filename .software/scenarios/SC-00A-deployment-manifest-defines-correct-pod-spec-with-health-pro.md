@@ -7,14 +7,14 @@ related_reqs:
     - REQ-008
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - kubernetes
     - deployment
     - health
 title: Deployment manifest defines correct pod spec with health probes
 type: happy-path
-updated: "2026-06-22"
+updated: "2026-06-29"
 ---
 
 # SC-00A: Deployment manifest defines correct pod spec with health probes

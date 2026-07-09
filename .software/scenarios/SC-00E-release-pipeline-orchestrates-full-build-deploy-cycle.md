@@ -7,14 +7,14 @@ related_reqs:
     - REQ-008
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - release
     - makefile
     - deploy
 title: Release pipeline orchestrates full build-deploy cycle
 type: happy-path
-updated: "2026-06-22"
+updated: "2026-06-29"
 ---
 
 # SC-00E: Release pipeline orchestrates full build-deploy cycle

@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00A
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - grpc
     - list-tools
 title: ListTools returns registered built-in tools
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-014: ListTools returns registered built-in tools

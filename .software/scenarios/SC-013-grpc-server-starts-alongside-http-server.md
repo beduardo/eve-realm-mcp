@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00A
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - grpc
     - server
 title: gRPC server starts alongside HTTP server
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-013: gRPC server starts alongside HTTP server

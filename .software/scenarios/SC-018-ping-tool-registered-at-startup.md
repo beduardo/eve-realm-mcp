@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00B
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - ping
     - startup
 title: Ping tool registered at startup
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-018: Ping tool registered at startup

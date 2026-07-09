@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00B
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - ping
     - invoke
 title: Ping invocation returns pong with RFC 3339 timestamp
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-019: Ping invocation returns pong with RFC 3339 timestamp

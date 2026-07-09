@@ -7,13 +7,13 @@ related_reqs:
     - REQ-008
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - kubernetes
     - service
 title: Service manifest exposes HTTP and gRPC ports
 type: happy-path
-updated: "2026-06-22"
+updated: "2026-06-29"
 ---
 
 # SC-00B: Service manifest exposes HTTP and gRPC ports

@@ -11,14 +11,14 @@ related_scenarios:
 related_testcases: []
 related_userstories: []
 source: manual
-status: active
+status: implemented
 tags:
     - tool
     - built-in
     - diagnostic
     - ping
 title: Ping built-in diagnostic tool
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # REQ-00B: Ping built-in diagnostic tool

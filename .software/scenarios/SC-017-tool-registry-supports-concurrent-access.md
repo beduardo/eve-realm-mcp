@@ -7,13 +7,13 @@ related_reqs:
     - REQ-00A
 related_testcases: []
 source: manual
-status: validated
+status: implemented
 tags:
     - registry
     - concurrency
 title: Tool registry supports concurrent access
 type: happy-path
-updated: "2026-06-28"
+updated: "2026-06-29"
 ---
 
 # SC-017: Tool registry supports concurrent access

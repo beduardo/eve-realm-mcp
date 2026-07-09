@@ -1,0 +1,38 @@
+{
+  "id": "SP-005",
+  "title": "gRPC request logging interceptor",
+  "status": "completed",
+  "created": "2026-07-01T21:49:16Z",
+  "updated": "2026-07-09T11:23:42Z",
+  "entities": [
+    {
+      "id": "REQ-00C",
+      "title": "gRPC request logging interceptor",
+      "type": "requirement",
+      "status_at_entry": "active",
+      "partial": false
+    },
+    {
+      "id": "SC-01A",
+      "title": "ListTools RPC logs method duration and status",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-01B",
+      "title": "InvokeTool RPC log includes tool name",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    },
+    {
+      "id": "SC-01C",
+      "title": "Failed RPC logs at error level with status code",
+      "type": "scenario",
+      "status_at_entry": "validated",
+      "partial": false
+    }
+  ],
+  "readme_update_needed": false
+}

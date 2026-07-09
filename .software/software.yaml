@@ -7,7 +7,7 @@ activeChange: CR-001
 autoCommit: true
 llmSummary: true
 sprints:
-    counter: 3
+    counter: 5
 scan:
     includePaths:
         - .
@@ -30,8 +30,8 @@ counters:
     ADR: 0
     BF: 0
     CR: 1
-    REQ: 9
-    SC: 18
+    REQ: 12
+    SC: 28
     TC: 0
     US: 0
 pinned:
