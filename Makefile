@@ -1,4 +1,4 @@
-VERSION    := $(shell cat VERSION)
+VERSION     = $(shell cat VERSION)
 GIT_HASH   := $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 BUILD_DATE := $(shell date -u +%Y-%m-%dT%H:%M:%SZ)
 
